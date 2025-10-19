@@ -1,7 +1,0 @@
-{"level":"info","ts":1760901295.760036,"caller":"logger/logger.go:29","msg":"App: INIT"}
-{"level":"info","ts":1760901295.760707,"caller":"logger/logger.go:29","msg":"Router: INIT"}
-{"level":"info","ts":1760901295.76122,"caller":"logger/logger.go:29","msg":"Context, Cancel: INIT"}
-{"level":"info","ts":1760901295.7613537,"caller":"logger/logger.go:29","msg":"HTTP srever starting on port: 8080"}
-{"level":"info","ts":1760901354.9062006,"caller":"logger/logger.go:29","msg":"Request /health Response Code200"}
-{"level":"info","ts":1760901364.060274,"caller":"logger/logger.go:29","msg":"Shutdown signal recoived"}
-{"level":"info","ts":1760901364.0611217,"caller":"logger/logger.go:29","msg":"Server close"}

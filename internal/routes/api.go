@@ -9,5 +9,6 @@ import (
 func SetupRoutes(router *gin.Engine) *gin.RouterGroup {
 	apiGroup := router.Group("/")
 	apiGroup.GET("/health", handlers.HealthHandler)
+	apiGroup.GET("/ws", handlers.WebSocketHandler)
 	return apiGroup
 }

@@ -48,12 +48,16 @@ export default defineConfig({
 	},
 
 	server: {
-		port: process.env.PORT ? Number(process.env.PORT) : 8081,
-		proxy: {
-			'/api': {
-				target: 'http://localhost:8080',
-				changeOrigin: true,
-			},
-		}
-	},
+		host: '0.0.0.0'
+	}
+
+	// server: {
+	// 	port: process.env.PORT ? Number(process.env.PORT) : 8081,
+	// 	// proxy: {
+	// 	// 	'/api': {
+	// 	// 		target: 'http://localhost:8080',
+	// 	// 		changeOrigin: true,
+	// 	// 	},
+	// 	// }
+	// },
 });

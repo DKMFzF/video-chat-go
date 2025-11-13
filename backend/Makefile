@@ -53,7 +53,9 @@ itest:
 
 clean:
 	@echo "Cleaning..."
-	./bin/clear.sh
+	sudo ./bin/clear.sh
+	@echo "Cleaning end"
+
 
 clean-logs:
 	@echo "Cleaning..."

@@ -1,8 +1,14 @@
-all: build test
+all: build 
 
+# for unix
 build:
 	@echo "Building..."
-	@go build -o main cmd/video-chat/main.go
+	sudo ./bin/build.sh
+	@echo "Building end"
+
+build-win:
+	@echo "Building..."
+	sudo ./bin/win/build-win.sh
 
 run:
 	@echo "Start container..."
@@ -47,7 +53,7 @@ itest:
 
 clean:
 	@echo "Cleaning..."
-	@rm -f main
+	./bin/clear.sh
 
 clean-logs:
 	@echo "Cleaning..."

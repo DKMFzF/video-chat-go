@@ -50,16 +50,18 @@ func (app *App) Run() {
 		Handler: app.Router,
 	}
 
-	go func() {
-		app.Logger.Infof("HTTP srever starting on port: %s", app.Config.Port)
-		if err := app.Server.ListenAndServe(); err != nil && err != http.ErrServerClosed {
-			app.Logger.Fatalf("HTTP server error: %v", err)
-		}
-	}()
+	go startServer(app)
 
 	<-app.Context.Done()
 	app.Logger.Infof("Shutdown signal recoived")
 	app.gracefulShutdown()
+}
+
+func startServer(app *App) {
+	app.Logger.Infof("HTTP server starting on port: %s", app.Config.Port)
+	if err := app.Server.ListenAndServe(); err != nil && err != http.ErrServerClosed {
+		app.Logger.Fatalf("HTTP server error: %v", err)
+	}
 }
 
 func (app *App) gracefulShutdown() {

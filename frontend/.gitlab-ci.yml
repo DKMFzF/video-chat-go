@@ -1,9 +1,0 @@
-stages:
-  - verify
-
-include:
-  - template: Security/SAST.gitlab-ci.yml
-  
-  - local: .gitlab-ci/gitlab_sast.yml
-  - local: .gitlab-ci/lint_and_test.yml
-  

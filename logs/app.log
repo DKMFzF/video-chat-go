@@ -1,0 +1,6 @@
+{"level":"info","ts":1763014658.9132795,"caller":"logger/logger.go:29","msg":"App: INIT"}
+{"level":"info","ts":1763014658.9137547,"caller":"logger/logger.go:29","msg":"Router: INIT"}
+{"level":"info","ts":1763014658.9139566,"caller":"logger/logger.go:29","msg":"Context, Cancel: INIT"}
+{"level":"info","ts":1763014658.9140418,"caller":"logger/logger.go:29","msg":"HTTP server starting on port: 8080"}
+{"level":"info","ts":1763014660.765415,"caller":"logger/logger.go:29","msg":"Shutdown signal recoived"}
+{"level":"info","ts":1763014660.7663074,"caller":"logger/logger.go:29","msg":"Server close"}

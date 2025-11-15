@@ -13,7 +13,7 @@ git clonei https://github.com/DKMFzF/webrtc-chat-go.git
 
 cd video-chat-go
 
-go mod tidy
+go mod download
 
 make run
 ```
